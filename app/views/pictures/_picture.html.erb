@@ -1,0 +1,21 @@
+<div id="<%= dom_id picture %>">
+  <p class="my-5">
+    <strong class="block font-medium mb-1">
+      <%= t("input_form.title") %>
+    </strong>
+    <%= picture.title %>
+  </p>
+
+  <p class="my-5">
+    <strong class="block font-medium mb-1">
+      <%= t("input_form.description") %>
+    </strong>
+    <%= picture.description %>
+  </p>
+  <% if picture.image.attached? %>
+    <%= image_tag url_for(picture.image), alt: "Image" %>
+  <% else %>
+    <%= image_tag "placeholder.jpg", alt: "Image mising" %>
+  <% end %>
+
+</div>

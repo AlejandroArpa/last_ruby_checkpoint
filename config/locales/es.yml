@@ -1,0 +1,33 @@
+es:
+  activerecord:
+    errors:
+      models:
+        picture:
+          attributes:
+            image:
+              required: "Adjunte un archivo de imagen"
+            title:
+              blank: "El título no puede estar en blanco"
+  errors:
+    messages:
+      blank: "no puede estar en blanco"
+
+  input_form:
+    main: "Nueva imagen"
+    title: "Titulo"
+    description: "Descripción"
+    select_file: "Seleccione archivo"
+    submit: "Crear imagen"
+    back: "volver a imagenes"
+
+  pictures:
+    title: "Imagenes"
+    new: "Nueva imagen"
+    show: "Mostrar esta imagen"
+    edit: "Editar esta imagen"
+    delete: "Eliminar esta imagen"
+
+  crud:
+    created: "Imagen creada"
+    updated: "Imagen actualizada"
+    deleted: "Imagen eliminada"
